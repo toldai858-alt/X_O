@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { PINGate } from "@/components/PINGate";
 
 const GameApp = dynamic(
   () => import("@/components/GameApp").then((m) => m.GameApp),
@@ -9,9 +8,5 @@ const GameApp = dynamic(
 );
 
 export default function HomePage() {
-  return (
-    <PINGate>
-      <GameApp />
-    </PINGate>
-  );
+  return <GameApp />;
 }
