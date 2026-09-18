@@ -1,0 +1,44 @@
+{
+  "name": "nuqta-daira",
+  "version": "1.0.0",
+  "description": "Arabic local two-player neon tic-tac-toe",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "server": "node --experimental-strip-types server/index.ts",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.45.0",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.20.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.0"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

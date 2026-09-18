@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nuqta-daira-ws
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node --experimental-strip-types server/index.ts
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
